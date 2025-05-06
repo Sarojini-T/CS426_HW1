@@ -6,5 +6,5 @@ import { editDateType } from "./ActivityTrackerTypes";
 export const EditDateButton : React.FC = () => {
     // Retrieve the state function that sets the dat from the context
     const {setDateAsSelected} : editDateType = useContext(EditDate);
-    return <button type="submit" className="bg-[#fffaf1] border rounded shadow" onClick={(() => setDateAsSelected(() => false))}> Edit Date</button>
+    return <button type="submit" className="border bg-[#fffaf1]"onClick={(() => setDateAsSelected(() => false))}> Edit Date</button>
 }

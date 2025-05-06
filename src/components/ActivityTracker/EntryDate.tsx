@@ -50,7 +50,7 @@ export const EntryDate : React.FC = () => {
             <div className="flex justify-between gap-3 mt-10">
                 <h1 className="dark:text-white">{selectedDate}</h1>
                 <EditDateButton />
-            </div> : <label className="text-white text-3xl mt-5"> Select the date  
+            </div> : <label className="dark:text-white text-3xl mt-5"> Select the date  
             <input type="date" className="border dark:bg-white dark:text-black" onChange={(event) => handleChange(event)} /> 
             </label>    
             }

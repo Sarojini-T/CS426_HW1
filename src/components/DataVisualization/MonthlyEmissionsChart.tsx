@@ -24,19 +24,23 @@ export const MonthlyEmissionsChart: React.FC = () => {
 
   
   return (
-    <BarChart
-    // Adds all the months to the x-axis and adds a color to the labels base on the theme
-      xAxis={[{ scaleType: "band", data: months, sx: {
-        "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }},
-      }]}
+    <>
+      <h1 className=" ml-5"> Monthly Emissions</h1>
+      <BarChart
+      // Adds all the months to the x-axis and adds a color to the labels base on the theme
+        xAxis={[{ scaleType: "band", data: months, sx: {
+          "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }},
+        }]}
 
-      // Adds a color to the labels based on the theme
-      yAxis={[{sx: {
-        "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }}
-      }]}
-      series={barChartData}
-      width={950}
-      height={300}
-    />
+        // Adds a color to the labels based on the theme
+        yAxis={[{sx: {
+          "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }}
+        }]}
+        series={barChartData}
+        width={950}
+        height={300}
+      />
+    </>
+    
   );
 };

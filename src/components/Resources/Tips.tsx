@@ -3,7 +3,7 @@ export const Tips = () => {
     return (
         <div className="ml-10">
             <h1 className="dark:text-white"> Tips </h1>
-            <li className="dark:text-white">Reduce your use of cars. Try whenever possible : 
+            <li className="dark:text-white">Reduce your use of cars. Try whenever possible 
                 <ul>
                     <li className="dark:text-white"> Walking </li>
                     <li className="dark:text-white"> Biking </li>

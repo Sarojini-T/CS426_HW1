@@ -10,23 +10,26 @@ export const YearlyEmissionsChart = () => {
     const barColor = getBarColor();
      
   return (
-    <LineChart
-      xAxis={[{ scaleType: 'band', data : Array.from(YearlyCarbonEmissions.keys()),  sx: {
-        "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }}
-    }]}
+    <>
+      <h1 className="ml-5">Yearly Emissions</h1>
+      <LineChart
+        xAxis={[{ scaleType: 'band', data : Array.from(YearlyCarbonEmissions.keys()),  sx: {
+          "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }}
+      }]}
 
-    yAxis={[{ sx: {
-        "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }}
-    }]}
-      series={[
-        {
-          data:  Array.from(YearlyCarbonEmissions.values()),
-          area : true,
-          color : barColor
-        },
-      ]}
-      width={600}
-      height={300}
-    />
+      yAxis={[{ sx: {
+          "& .MuiChartsAxis-tickLabel": { fill: chartAxisColor }}
+      }]}
+        series={[
+          {
+            data:  Array.from(YearlyCarbonEmissions.values()),
+            area : true,
+            color : barColor
+          },
+        ]}
+        width={600}
+        height={300}
+      />
+    </>
   );
 }
